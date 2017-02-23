@@ -15,4 +15,4 @@ This uses the [old Max SDK](http://github.com/Cycling74/max-sdk), and the Xcode 
 
 ## Licence
 
-Use of this external is governed by the MIT License as stated in the accompanying [LICENSE.md](license.md) file.
+Use of this external is governed by the MIT License as stated in the accompanying [LICENSE.txt](LICENSE.txt) file.
