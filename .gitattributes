@@ -2,3 +2,4 @@ source/alert/alert.xcodeproj/* linguist-vendored
 source/alert/build/* linguist-vendored
 help/* linguist-vendored
 docs/* linguist-vendored
+source/alert/build.rb linguist-vendored
