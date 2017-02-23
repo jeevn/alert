@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<!--Data marked TEXT_HERE, INLET_TYPE, OUTLET_TYPE, ARG_NAME and ARG_TYPE need to be filled in-->
+<c74object name="alert" module="" category="">
+	<digest>
+		Popup alert
+	</digest>
+	<description>
+		Render a message in a modal dialog box, or optionally as an error-style patcher banner.
+	</description>
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">
+			Jeevan C. Rai
+		</metadata>
+		<metadata name="tag">
+			UI
+		</metadata>
+	</metadatalist>
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="INLET_TYPE">
+			<digest>
+				Message
+			</digest>
+			<description>
+				dialog text
+			</description>
+		</inlet>
+		</inletlist>
+	<!--OUTLETS-->
+	<!--ARGUMENTS-->
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="anything">
+			<arglist>
+				<arg name="message" type="list" optional="0" />
+			</arglist>
+			<digest>
+				Dialog text
+			</digest>
+			<description>
+				Message to be displayed in the dialog. Note that commas and semicolons won’t work due to their special meaning in Max’s messaging syntax.
+			</description>
+		</method>
+	</methodlist>
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="banner" get="1" set="1" type="int" size="1">
+			<digest>
+				Banner-display mode
+			</digest>
+			<description>
+				When enabled, displays a banner across the top of the patcher, instead of a popup dialog.
+			</description>
+			<attributelist>
+				<attribute name="category" get="1" set="1" type="symbol" size="1" value="Behavior" />
+				<attribute name="default" get="1" set="1" type="int" size="1" value="0" />
+				<attribute name="label" get="1" set="1" type="symbol" size="1" value="Banner-display mode" />
+				<attribute name="style" get="1" set="1" type="symbol" size="1" value="onoff" />
+			</attributelist>
+		</attribute>
+	</attributelist>
+	<!--EXAMPLE-->
+	<examplelist>
+		<example caption="" img="" />
+	</examplelist>
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="print"></seealso>
+		<seealso name="error"></seealso>
+		<seealso name="pcontrol"></seealso>
+	</seealsolist>
+</c74object>
